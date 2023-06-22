@@ -4,8 +4,252 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEPSE CLONE</title>
+    <style>
+        body{
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: -2%;
+            background-color: #F1F3F5;
+            font-family:  "Roboto", sans-serif;
+            margin-bottom: 100px;
+        }
+        .logo{
+            width: 140px;
+           margin-left:2%;
+        }
+        .line{
+            border:1px;
+            color: rgba(80, 79, 79, 0.229);
+            width: 70px;
+            margin-left: 10%;
+            transform: rotate(90deg);
+           margin-top: -6%;
+        }
+        .name{
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+            color: #0078d7;
+            margin-left: 14.5%;
+            margin-top: -3.8%;
+            font-size: 18px;
+        }
+        .name2{
+            color: #0078d7;
+            margin-left: 69%;
+            margin-top: -6%;
+            font-size: 27px;
+            font-weight: 700;
+        }
+        #pages{
+            margin-top: -11.7%;
+        }
+        .general{
+            text-decoration: none;
+            margin-left: 17%;
+            margin-top: 10%;
+            display:inline-block;
+        }
+        .page1{
+          border:none;
+          display:inline-block;
+          background-color:  #0078d7;
+          border-radius: 50%;
+          height: 25px;
+          width:25px;
+          text-align: center;
+          vertical-align: middle;
+          color: white;
+          line-height: 26px; 
+          margin-left: 38%;
+        }
+        .general1{
+            display: flex;
+            margin-top: 7px;
+            font-size:14px;
+            color:  #0078d7;
+        }
+        .link{
+            text-decoration: none;
+            margin-top: 10%;
+            display:inline-block;
+            margin-left: 4%;
+        }
+        .page{
+          border:none;
+          display:inline-block;
+         border: 2px solid;
+         border-color: #acb5bd;
+          border-radius: 50%;
+          height: 22px;
+          width:22px;
+          text-align: center;
+          vertical-align: middle;
+          color: #acb5bd;
+          line-height: 23px; 
+          margin-left: 35%;
+          background-color:   #F1F3F5;
+        }
+        .detail{
+            display: flex;
+            margin-top: 7px;
+            font-size:14px;
+            color: #acb5bd;
+            text-align: center;
+        }
+        .dotline{
+            margin-left: 22%;
+            margin-top: 10%;
+            display: inline-flex;
+            color: #acb5bd;
+        }
+        .container{
+            border:1px solid rgba(0, 0, 0, 0);
+            margin-top: 2%;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 0px 5px #acb5bd4d;
+            display: block;
+            padding: 15px 0px;
+        }
+        .container h2{
+            color: #0078d7;
+            font-weight: bolder;
+            font-size: 26px!important;
+            text-align: center;
+        }
+        #form{
+            margin-left: 22%;
+        }
+        .label{
+            color: #0475d1;
+            display: inline-block;
+            margin-top: 15px;
+            margin-bottom: 9px;
+            font-size:14px!important;
+           
+        }
+        .input{
+            width:660px;
+            height: 45px;
+            border-radius: 5px;
+            border: 1px #acb5bd solid;
+            font-size: 16px;    
+          
+        }
+        .input::placeholder{
+            color: #acb5bd;
+            padding-left: 10px;
+        }
+        .input:focus{
+        outline: none;
+        font-size: 16px;  
+        color: #4c4e50;
+        }
+        select{
+            padding-left: 10px;
+            width:665px!important;
+        }
+        sup{
+            color: red;
+            font-size: large;
+            vertical-align: middle;
+            margin-left: 3px;
+        }
+        .online{
+            font-size:14px;
+        }
+        .inputonline{
+            width:14px;
+            vertical-align: middle;
+            margin-bottom: 8px;
+            margin-top: 8px;
+        }
+        .nextbutton{
+            text-decoration: none;
+            color: white;
+            border: none;
+            background-color:#0475d1;
+            padding: 9px 33px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-left: 60%;
+            margin-top: -2%;
+        }
+       #button{
+        display: inline-block;
+        margin-left: 66%;
+        margin-top: 50px;
+        padding-bottom: 20px;
+       }
+        .cancel{
+            border: 1px solid rgb(248, 105, 105);
+            border-radius: 5px;
+            padding: 8px 25px;
+            color: rgb(255, 73, 73);
+            font-size: 16px;
+            font-weight: 550;
+            text-decoration: none;
+        }
+        .submit{
+            color: rgb(255, 255, 255);
+           background-color: rgba(8, 145, 8, 0.486);
+            border-radius: 5px;
+            padding: 8px 25px;
+            font-size: 16px;
+            font-weight: 550;
+            text-decoration: none;
+            margin-left: 0.5%;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <h1> Developing SooneST</h1>
+       <img  class="logo" src="1687352991770 (2).png">
+       <div class="line"><hr></div>
+       <h1 class="name">NICKESH STOCK MARKET<br>TRADE MANAGEMENT SYSTEM<br>STOCK BROKER NO:- 9</h1>
+       <h1 class="name2">Online Registration Form</h1>
+       <a class="dotline">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</a>
+       <div id="pages">
+        <a class="general" href="index.html"><span class="page1">1</span><span class="general1">General Details</span></a>
+        <a class="link" href="Address.html"><span class="page">2</span><span class="detail">Address Details</span></a>
+        <a class="link" href="Bank.html"><span class="page">3</span><span class="detail">Bank Details</span></a>
+        <a class="link" href="Depository.html"><span class="page">4</span><span class="detail">Depository<br>Details</span></a>
+        <a class="link" href="Document.html"><span class="page">5</span><span class="detail">Documents<br>Upload</span></a>
+        <a class="link" href="User.html"><span class="page">6</span><span class="detail">User Agreement</span></a>
+       </div>
+      <div class="container">
+        <h2>General Details</h2>
+        <form id="form">
+            <label class="label" for="refer">Referred By</label><br>
+            <input class="input" type="text" name="myrefer" id="refer" placeholder="Client Code" autocomplete="off"><br>
+            <label class="label" for="client">Client Type</label><br>
+            <select class="input" name="clienttype" id="client">
+                <option selected disabled>Select Client Type</option>
+                <option>Corporate</option>
+                <option>Individual</option>
+                <option>Mutual Funds</option>
+            </select><br>
+            <label class="label" for="mobile">Mobile Number<sup>*</sup></label><br>
+            <input class="input" type="text" name="mynumber" id="mobile" placeholder="Mobile Number" required  autocomplete="off"><br>
+            <label class="label" for="online">Online/Offline<sup>*</sup></label><br>
+            <input class="inputonline" type="radio" name="myonline" id="online" checked required><span class="online">ONLINE</span><br>
+            <label class="label" for="memberbranch">Member Branch<sup>*</sup></label><br>
+            <select class="input" name="branch" id="memberbranch" required>
+                <option selected disabled>Select Member Branch</option>
+                <option>Jhapa</option>
+                <option>Kathmandu</option>
+                <option>Dhangadi</option>
+            </select><br>
+            <label class="label" for="PAN">PAN Number</label><br>
+            <input class="input" type="text" name="mypan" id="PAN" placeholder="PAN Nmber"  autocomplete="off"><br>
+            <label class="label" for="email">Email<sup>*</sup></label><br>
+            <input class="input" type="email" name="myemail" id="email"  autocomplete="off" placeholder="Email"><br><br>
+            <a class="nextbutton" href="Address.html">Next</a><br>
+        </form>
+      </div>
+      <div id="button"></div>
+      <a class="cancel" href="cancel.html">Cancel application</a>      
+      <a class="submit" href="error.html">Submit application</a>      
+
 </body>
 </html>
