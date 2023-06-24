@@ -264,6 +264,37 @@
             border-radius: 5px;
         }
 
+        .uploadbutton1 {
+            border: 1px solid#3093e4;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            padding-right: 25px;
+            padding-right: 15px;
+            border-radius: 5px;
+            margin-right: 6%;
+        }
+
+        .uploadbutton2 {
+            border: 1px solid#3093e4;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            padding-right: 25px;
+            padding-right: 15px;
+            border-radius: 5px;
+            display: flex;
+            margin-left: 65%;
+            margin-right: 9.5%;
+        }
+
+        .delete {
+            display: flex;
+            color: red;
+            margin-left: 95.5%;
+            margin-top: -6%;
+            font-size: x-large;
+            font-weight: 600;
+        }
+
         .uploadicon {
             padding-left: 20px;
             padding-right: 10px;
@@ -332,10 +363,20 @@
                                     class="discription">(Should be in .jpg format)</span></label></td>
                         <td class="td2"><input type="file" name="myppphoto" id="ppphoto" style="display: none;">
                             <a href="#" onclick="document.getElementById('ppphoto').click(); return false;"><span
-                                    class="uploadbutton"><span class="uploadicon"><i
+                                    class="uploadbutton1"><span class="uploadicon"><i
                                             class="fa-solid fa-file-arrow-up"></i></span><span
-                                        class="uploadtext">UPLOAD</span></span></a><a href="ppphoto2.html"><span
-                                    class="plus">&#43;</span></a>
+                                        class="uploadtext">UPLOAD</span></span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="label" for="ppphoto">PP Size Photo Upload<sup>*</sup><br><span
+                                    class="discription">(Should be in .jpg format)</span></label></td>
+                        <td class="td2"><input type="file" name="myppphoto" id="ppphoto" style="display: none;">
+                            <a href="#" onclick="document.getElementById('ppphoto').click(); return false;"><span
+                                    class="uploadbutton2"><span class="uploadicon"><i
+                                            class="fa-solid fa-file-arrow-up"></i></span><span
+                                        class="uploadtext">UPLOAD</span></span></a><a href="Document.html"><span
+                                    class="delete">&#215;</span></a>
                         </td>
                     </tr>
                     <tr>

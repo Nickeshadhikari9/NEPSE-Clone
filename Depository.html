@@ -1,154 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEPSE CLONE</title>
     <style>
-        body{
+        body {
             margin-left: 10%;
             margin-right: 10%;
             margin-top: -2%;
             background-color: #F1F3F5;
-            font-family:  "Roboto", sans-serif;
+            font-family: "Roboto", sans-serif;
             margin-bottom: 100px;
         }
-        .logo{
+
+        .logo {
             width: 140px;
-           margin-left:2%;
+            margin-left: 2%;
         }
-        .line{
-            border:1px;
+
+        .line {
+            border: 1px;
             color: rgba(80, 79, 79, 0.229);
             width: 70px;
             margin-left: 10%;
             transform: rotate(90deg);
-           margin-top: -6%;
+            margin-top: -6%;
         }
-        .name{
-            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+        .name {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
             color: #0078d7;
             margin-left: 14.5%;
             margin-top: -3.8%;
             font-size: 18px;
         }
-        .name2{
-            font-family:  "Roboto", sans-serif;
+
+        .name2 {
+            font-family: "Roboto", sans-serif;
             color: #0078d7;
             margin-left: 69%;
             margin-top: -6%;
             font-size: 27px;
             font-weight: 700;
         }
-        #pages{
+
+        #pages {
             margin-top: -11.7%;
         }
-        .general{
+
+        .general {
             text-decoration: none;
             margin-left: 17%;
             margin-top: 10%;
-            display:inline-block;
+            display: inline-block;
         }
-        .page1{
-          border:none;
-          display:inline-block;
-          border: 2px solid;
-          background-color:#F1F3F5;
-          border-radius: 50%;
-          height: 22px;
-          width:22px;
-          text-align: center;
-          vertical-align: middle;
-          color:#acb5bd;
-          line-height: 23px; 
-          margin-left: 38%;
+
+        .page1 {
+            border: none;
+            display: inline-block;
+            border: 2px solid;
+            background-color: #F1F3F5;
+            border-radius: 50%;
+            height: 22px;
+            width: 22px;
+            text-align: center;
+            vertical-align: middle;
+            color: #acb5bd;
+            line-height: 23px;
+            margin-left: 38%;
         }
-        .general1{
+
+        .general1 {
             display: flex;
             margin-top: 7px;
-            font-size:14px;
-            color:#acb5bd;
+            font-size: 14px;
+            color: #acb5bd;
         }
-        .link{
+
+        .link {
             text-decoration: none;
             margin-left: 4%;
             margin-top: 10%;
-            display:inline-block;
+            display: inline-block;
         }
-        .page{
-          border:none;
-          display:inline-block;
-          border: 2px solid;
-         border-color: #acb5bd;
-          border-radius: 50%;
-          height: 22px;
-          width:22px;
-          text-align: center;
-          vertical-align: middle;
-          color: #acb5bd;
-          line-height: 23px; 
-          margin-left: 35%;
-          background-color:   #F1F3F5;
+
+        .page {
+            border: none;
+            display: inline-block;
+            border: 2px solid;
+            border-color: #acb5bd;
+            border-radius: 50%;
+            height: 22px;
+            width: 22px;
+            text-align: center;
+            vertical-align: middle;
+            color: #acb5bd;
+            line-height: 23px;
+            margin-left: 35%;
+            background-color: #F1F3F5;
         }
-        .detail{
+
+        .detail {
             display: flex;
             margin-top: 7px;
-            font-size:14px;
+            font-size: 14px;
             color: #acb5bd;
             text-align: center;
         }
-        .dotline{
+
+        .dotline {
             margin-left: 22%;
             margin-top: 10%;
             display: inline-flex;
             color: #acb5bd;
         }
-        .depository{
+
+        .depository {
             text-decoration: none;
-            font-family:  "Roboto", sans-serif;
+            font-family: "Roboto", sans-serif;
             margin-left: 4%;
             margin-top: 10%;
-            display:inline-block;
+            display: inline-block;
         }
-        .page4{
-          border:none;
-          display:inline-block;
-         border: 2px solid;
-         border:none;
-          border-radius: 50%;
-          height: 25px;
-          width:25px;
-          text-align: center;
-          vertical-align: middle;
-          color: #ffffff;
-          line-height: 24px; 
-          margin-left: 35%;
-          background-color:#0078d7;
+
+        .page4 {
+            border: none;
+            display: inline-block;
+            border: 2px solid;
+            border: none;
+            border-radius: 50%;
+            height: 25px;
+            width: 25px;
+            text-align: center;
+            vertical-align: middle;
+            color: #ffffff;
+            line-height: 24px;
+            margin-left: 35%;
+            background-color: #0078d7;
         }
-        .depodetail{
+
+        .depodetail {
             display: flex;
             margin-top: 7px;
-            font-size:14px;
-            color:#0078d7;
+            font-size: 14px;
+            color: #0078d7;
             text-align: center;
         }
 
+        .container {
+            border: 1px solid rgba(0, 0, 0, 0);
+            margin-top: 2%;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 0px 5px #acb5bd4d;
+            display: block;
+            padding: 15px 0px;
+        }
+
+        .container h2 {
+            color: #0078d7;
+            font-weight: bolder;
+            font-size: 26px !important;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        #form {
+            margin-left: 22%;
+            margin-right: 22%;
+            padding-bottom: 10px;
+        }
+
+        table {
+            border-spacing: 15px 0px;
+            border: none;
+            margin-left: -2%;
+
+        }
+
+        .label {
+            color: #0475d1;
+            display: inline-block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 14px !important;
+
+        }
+
+        .input {
+            width: 655px;
+            height: 45px;
+            border-radius: 5px;
+            border: 1px #acb5bd solid;
+            font-size: 16px;
+            padding-left: 10px;
+        }
+
+        .input::placeholder {
+            color: #acb5bd;
+
+        }
+
+        .input:focus {
+            outline: none;
+            font-size: 16px;
+
+        }
+
+        sup {
+            color: red;
+            font-size: large;
+            vertical-align: middle;
+            margin-left: 3px;
+        }
+
+        .nextbutton {
+            color: white;
+            border: none;
+            background-color: #0475d1;
+            padding: 9px 33px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 25%;
+        }
+
+        .backbutton {
+            background-color: white;
+            border: 1px solid #0475d1;
+            color: #0475d1;
+            padding: 9px 33px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 25%;
+
+        }
+
+        #button {
+            display: flex;
+            margin-left: 67.5%;
+            margin-top: 50px;
+            padding-bottom: 20px;
+        }
+
+        .cancel {
+            border: 1px solid rgb(248, 105, 105);
+            border-radius: 5px;
+            padding: 10px 25px;
+            color: rgb(249, 98, 98);
+            font-size: 16px;
+            font-weight: 550;
+            text-decoration: none;
+        }
+
+        .submit {
+            color: rgb(255, 255, 255);
+            background-color: rgba(8, 145, 8, 0.486);
+            border-radius: 5px;
+            padding: 10px 25px;
+            font-size: 16px;
+            font-weight: 550;
+            text-decoration: none;
+            margin-left: 2%;
+        }
+
+        a {
+            text-decoration: none;
+        }
     </style>
 </head>
+
 <body>
-       <img  class="logo" src="1687352991770 (2).png">
-       <div class="line"><hr></div>
-       <h1 class="name">NICKESH STOCK MARKET<br>TRADE MANAGEMENT SYSTEM<br>STOCK BROKER NO:- 9</h1>
-       <h1 class="name2">Online Registration Form</h1>
-       <a class="dotline">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</a>
-       <div id="pages">
-        <a class="general" href="index.html"><span class="page1">1</span><span class="general1">General Details</span></a>
+    <img class="logo" src="1687352991770 (2).png">
+    <div class="line">
+        <hr>
+    </div>
+    <h1 class="name">NICKESH STOCK MARKET<br>TRADE MANAGEMENT SYSTEM<br>STOCK BROKER NO:- 9</h1>
+    <h1 class="name2">Online Registration Form</h1>
+    <a class="dotline">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        - - - - - - - - - - - - - - - - - - - -</a>
+    <div id="pages">
+        <a class="general" href="index.html"><span class="page1">1</span><span class="general1">General
+                Details</span></a>
         <a class="link" href="Address.html"><span class="page">2</span><span class="detail">Address Details</span></a>
         <a class="link" href="Bank.html"><span class="page">3</span><span class="detail">Bank Details</span></a>
-        <a class="depository" href="Depository.html"><span class="page4">4</span><span class="depodetail">Depository<br>Details</span></a>
-        <a class="link" href="Document.html"><span class="page">5</span><span class="detail">Documents<br>Upload</span></a>
+        <a class="depository" href="Depository.html"><span class="page4">4</span><span
+                class="depodetail">Depository<br>Details</span></a>
+        <a class="link" href="Document.html"><span class="page">5</span><span
+                class="detail">Documents<br>Upload</span></a>
         <a class="link" href="User.html"><span class="page">6</span><span class="detail">User Agreement</span></a>
-       </div>
-      
+    </div>
+    <div class="container">
+        <h2>Depository Details(Beneficiary Owner Identity<br>Number)</h2>
+        <form id="form">
+            <table cellspacing="0px">
+                <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <label class="label" for="boid">BOID<sup>*</sup></label><br>
+                            <input class="input" name="myboid" id="boid" placeholder="BOID">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a class="backbutton" href="Bank.html">Back</a><br></td>
+                        <td align="right"><a class="nextbutton" href="Document.html">Next</a><br></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <div id="button">
+        <a class="cancel" href="cancelapplication.html">Cancel application</a>
+        <a class="submit" href="error.html">Submit application</a>
+    </div>
 </body>
+
+</html>
+
+</body>
+
 </html>

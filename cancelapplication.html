@@ -53,6 +53,21 @@
             text-decoration: none;
             color: rgb(255, 255, 255);
         }
+
+        hr {
+            color: #5f6062;
+            margin-top: 5%;
+            margin-left: -4.3%;
+            margin-right: -4.2%;
+            margin-bottom: 5%;
+
+        }
+
+        .confirm {
+            border: 1px solid red;
+            background-color: red;
+            padding: 10px 20px;
+        }
     </style>
 </head>
 
@@ -63,18 +78,22 @@
             <table cellspacing="0px" cellpadding="20px">
                 <tbbody>
                     <tr>
-                        <td align="left" bgcolor="red"><span class="sorry">Sorry</span></td>
+                        <td align="left" bgcolor="red"><span class="sorry">Cancel</span></td>
                     </tr>
                     <tr>
                         <td align="center" rowspan="4"><span class="detail">
-                                <hr color=white>You cannot add more than three Addresses.
-                                <hr color=white>
-                            </span></td>
+                                <hr color=white>You might have entered some information already. Are you<br>sure you
+                                want to remove this partially saved data?
+                                <hr>
+                            </span>
+                            <a class="confirm" href="index.html">Confirm</a>
+                        </td>
                     </tr>
+
                 </tbbody>
             </table>
         </div>
-        <span class="exit"><a href="addnewaddress3.html">&#215;</a></span>
+
     </div>
 </body>
 

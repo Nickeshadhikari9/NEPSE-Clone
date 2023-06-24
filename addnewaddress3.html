@@ -1,283 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a209b08554.js" crossorigin="anonymous"></script>
     <title>NEPSE CLONE</title>
     <style>
-        body{
+        body {
             margin-left: 10%;
             margin-right: 10%;
             margin-top: -2%;
             background-color: #F1F3F5;
-            font-family:  "Roboto", sans-serif;
+            font-family: "Roboto", sans-serif;
             margin-bottom: 100px;
         }
-        .logo{
+
+        .logo {
             width: 140px;
-           margin-left:2%;
+            margin-left: 2%;
         }
-        .line{
-            border:1px;
+
+        .line {
+            border: 1px;
             color: rgba(80, 79, 79, 0.229);
             width: 70px;
             margin-left: 10%;
             transform: rotate(90deg);
-           margin-top: -6%;
+            margin-top: -6%;
         }
-        .name{
-            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+        .name {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
             color: #0078d7;
             margin-left: 14.5%;
             margin-top: -3.8%;
             font-size: 18px;
         }
-        .name2{
-            font-family:  "Roboto", sans-serif;
+
+        .name2 {
+            font-family: "Roboto", sans-serif;
             color: #0078d7;
             margin-left: 69%;
             margin-top: -6%;
             font-size: 27px;
             font-weight: 700;
         }
-        #pages{
+
+        #pages {
             margin-top: -11.7%;
         }
-        .general{
+
+        .general {
             text-decoration: none;
             margin-left: 17%;
             margin-top: 10%;
-            display:inline-block;
+            display: inline-block;
         }
-        .page1{
-          border:none;
-          display:inline-block;
-          border: 2px solid;
-          background-color:#F1F3F5;
-          border-radius: 50%;
-          height: 22px;
-          width:22px;
-          text-align: center;
-          vertical-align: middle;
-          color:#acb5bd;
-          line-height: 23px; 
-          margin-left: 38%;
+
+        .page1 {
+            border: none;
+            display: inline-block;
+            border: 2px solid;
+            background-color: #F1F3F5;
+            border-radius: 50%;
+            height: 22px;
+            width: 22px;
+            text-align: center;
+            vertical-align: middle;
+            color: #acb5bd;
+            line-height: 23px;
+            margin-left: 38%;
         }
-        .general1{
+
+        .general1 {
             display: flex;
             margin-top: 7px;
-            font-size:14px;
-            color:#acb5bd;
+            font-size: 14px;
+            color: #acb5bd;
         }
-        .link{
+
+        .link {
             text-decoration: none;
-            font-family:  "Roboto", sans-serif;
+            font-family: "Roboto", sans-serif;
             margin-left: 4%;
             margin-top: 10%;
-            display:inline-block;
+            display: inline-block;
         }
-        .page{
-          border:none;
-          display:inline-block;
-          border: 2px solid;
-         border-color: #acb5bd;
-          border-radius: 50%;
-          height: 22px;
-          width:22px;
-          text-align: center;
-          vertical-align: middle;
-          color: #acb5bd;
-          line-height: 23px; 
-          margin-left: 35%;
-          background-color:   #F1F3F5;
+
+        .page {
+            border: none;
+            display: inline-block;
+            border: 2px solid;
+            border-color: #acb5bd;
+            border-radius: 50%;
+            height: 22px;
+            width: 22px;
+            text-align: center;
+            vertical-align: middle;
+            color: #acb5bd;
+            line-height: 23px;
+            margin-left: 35%;
+            background-color: #F1F3F5;
         }
-        .detail{
+
+        .detail {
             display: flex;
             margin-top: 7px;
-            font-size:14px;
+            font-size: 14px;
             color: #acb5bd;
             text-align: center;
         }
-        .dotline{
+
+        .dotline {
             margin-left: 22%;
             margin-top: 10%;
             display: inline-flex;
             color: #acb5bd;
         }
-        .address{
+
+        .address {
             text-decoration: none;
-            font-family:  "Roboto", sans-serif;
+            font-family: "Roboto", sans-serif;
             margin-left: 4%;
             margin-top: 10%;
-            display:inline-block;
+            display: inline-block;
         }
-        .page2{
-          border:none;
-          display:inline-block;
-         border: 2px solid;
-         border:none;
-          border-radius: 50%;
-          height: 25px;
-          width:25px;
-          text-align: center;
-          vertical-align: middle;
-          color: #ffffff;
-          line-height: 24px; 
-          margin-left: 35%;
-          background-color:#0078d7;
+
+        .page2 {
+            border: none;
+            display: inline-block;
+            border: 2px solid;
+            border: none;
+            border-radius: 50%;
+            height: 25px;
+            width: 25px;
+            text-align: center;
+            vertical-align: middle;
+            color: #ffffff;
+            line-height: 24px;
+            margin-left: 35%;
+            background-color: #0078d7;
         }
-        .adddetail{
+
+        .adddetail {
             display: flex;
             margin-top: 7px;
-            font-size:14px;
-            color:#0078d7;
+            font-size: 14px;
+            color: #0078d7;
             text-align: center;
         }
-        .container{
-            border:1px solid rgba(0, 0, 0, 0);
+
+        .container {
+            border: 1px solid rgba(0, 0, 0, 0);
             margin-top: 2%;
             background-color: rgb(255, 255, 255);
             box-shadow: 0px 0px 5px #acb5bd4d;
             display: block;
             padding: 15px 0px;
         }
-        .container h2{
+
+        .container h2 {
             color: #0078d7;
             font-weight: bolder;
-            font-size: 26px!important;
+            font-size: 26px !important;
             text-align: center;
         }
-        #form{
+
+        #form {
             margin-left: 22%;
             margin-right: 22%;
             padding-bottom: 10px;
         }
-        #form2{
+
+        #form2 {
             margin-left: 22%;
             margin-right: 22%;
             padding-bottom: 10px;
             margin-top: 3%;
         }
-        .address1{
+
+        .address1 {
             font-size: 13px;
             font-weight: 600;
             color: #5d5d5e;
         }
-        .delete{
+
+        .delete {
             font-size: 12px;
             font-weight: 600;
             color: #ff0000;
             display: inline-block;
             margin-left: 78%;
         }
-       
-        .unchangeable{
+
+        .unchangeable {
             cursor: not-allowed;
-            width:655px;
+            width: 655px;
             height: 45px;
             border-radius: 5px;
             border: 1px #acb5bd solid;
             font-size: 16px;
             padding-left: 10px;
-          
+
         }
-        .unchangeable:focus{
+
+        .unchangeable:focus {
             outline: none;
-        font-size: 16px; 
+            font-size: 16px;
         }
-        table{
+
+        table {
             border-spacing: 15px 0px;
             border: none;
             margin-left: -2%;
-    
+
         }
-       
-        .label{
+
+        .label {
             color: #0475d1;
             display: inline-block;
             margin-top: 10px;
             margin-bottom: 5px;
-            font-size:14px!important;
-           
+            font-size: 14px !important;
+
         }
-        .input{
-            width:315px;
+
+        .input {
+            width: 315px;
             height: 45px;
             border-radius: 5px;
             border: 1px #acb5bd solid;
             font-size: 16px;
             padding-left: 10px;
-             }
-             .input::placeholder{
+        }
+
+        .input::placeholder {
             color: #acb5bd;
-           
+
         }
-        .input:focus{
-        outline: none;
-        font-size: 16px;  
-        
+
+        .input:focus {
+            outline: none;
+            font-size: 16px;
+
         }
-        .inputaddress{
-            width:14px;
+
+        .inputaddress {
+            width: 14px;
             vertical-align: middle;
             margin-bottom: 8px;
             margin-top: 8px;
         }
-        .office{
+
+        .office {
             font-size: 14px;
-            font-weight: 400!important;
+            font-weight: 400 !important;
             color: #5e5f5f;
             font-family: "Roboto", sans-serif;
         }
-        select{
+
+        select {
             padding-left: 10px;
-            width:330px!important;
+            width: 330px !important;
         }
-        sup{
+
+        sup {
             color: red;
             font-size: large;
             vertical-align: middle;
             margin-left: 3px;
         }
-        .new{
+
+        .new {
             padding-top: 40px;
             padding-bottom: 10px;
         }
-        .plus{
+
+        .plus {
             font-size: 24px;
             font-weight: bolder;
-            color:#0475d1;
-            vertical-align:-2px;
-            
+            color: #0475d1;
+            vertical-align: -2px;
+
         }
-        .add{
+
+        .add {
             color: #0475d1;
             font-size: 15px;
             font-weight: bold;
         }
-        .nextbutton{
+
+        .nextbutton {
             color: white;
             border: none;
-            background-color:#0475d1;
+            background-color: #0475d1;
             padding: 9px 33px;
             border-radius: 4px;
         }
-        .backbutton{
+
+        .backbutton {
             background-color: white;
             border: 1px solid #0475d1;
-            color:#0475d1;
+            color: #0475d1;
             padding: 9px 33px;
             border-radius: 4px;
-            
+
         }
-        #button{
-        display: flex;
-        margin-left: 67.5%;
-        margin-top: 50px;
-        padding-bottom: 20px;
-       }
-        .cancel{
+
+        #button {
+            display: flex;
+            margin-left: 67.5%;
+            margin-top: 50px;
+            padding-bottom: 20px;
+        }
+
+        .cancel {
             border: 1px solid rgb(248, 105, 105);
             border-radius: 5px;
             padding: 10px 25px;
@@ -286,9 +324,10 @@
             font-weight: 550;
             text-decoration: none;
         }
-        .submit{
+
+        .submit {
             color: rgb(255, 255, 255);
-           background-color: rgba(8, 145, 8, 0.486);
+            background-color: rgba(8, 145, 8, 0.486);
             border-radius: 5px;
             padding: 10px 25px;
             font-size: 16px;
@@ -296,425 +335,459 @@
             text-decoration: none;
             margin-left: 2%;
         }
-        a{
+
+        a {
             text-decoration: none;
         }
     </style>
 </head>
+
 <body>
-       <img  class="logo" src="1687352991770 (2).png">
-       <div class="line"><hr></div>
-       <h1 class="name">NICKESH STOCK MARKET<br>TRADE MANAGEMENT SYSTEM<br>STOCK BROKER NO:- 9</h1>
-       <h1 class="name2">Online Registration Form</h1>
-       <a class="dotline">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</a>
-       <div id="pages">
-        <a class="general" href="index.html"><span class="page1">1</span><span class="general1">General Details</span></a>
-        <a class="address" href="Address.html"><span class="page2">2</span><span class="adddetail">Address Details</span></a>
+    <img class="logo" src="1687352991770 (2).png">
+    <div class="line">
+        <hr>
+    </div>
+    <h1 class="name">NICKESH STOCK MARKET<br>TRADE MANAGEMENT SYSTEM<br>STOCK BROKER NO:- 9</h1>
+    <h1 class="name2">Online Registration Form</h1>
+    <a class="dotline">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        - - - - - - - - - - - - - - - - - - - -</a>
+    <div id="pages">
+        <a class="general" href="index.html"><span class="page1">1</span><span class="general1">General
+                Details</span></a>
+        <a class="address" href="Address.html"><span class="page2">2</span><span class="adddetail">Address
+                Details</span></a>
         <a class="link" href="Bank.html"><span class="page">3</span><span class="detail">Bank Details</span></a>
-        <a class="link" href="Depository.html"><span class="page">4</span><span class="detail">Depository<br>Details</span></a>
-        <a class="link" href="Document.html"><span class="page">5</span><span class="detail">Documents<br>Upload</span></a>
+        <a class="link" href="Depository.html"><span class="page">4</span><span
+                class="detail">Depository<br>Details</span></a>
+        <a class="link" href="Document.html"><span class="page">5</span><span
+                class="detail">Documents<br>Upload</span></a>
         <a class="link" href="User.html"><span class="page">6</span><span class="detail">User Agreement</span></a>
-       </div>
-       <div class="container">
+    </div>
+    <div class="container">
         <h2>Address Details</h2>
         <form id="form">
             <span class="address1">Address 1</span><br><br>
             <label class="label" for="type">Address Type<sup>*</sup></label><br>
-            <input class="inputaddress" type="radio" name="type" id="corporate"><span class="office">CORPORATE OFFICE</span>
-            <input class="inputaddress" type="radio" name="type" id="individual"><span class="office">BRANCH OFFICE</span>
-            <input class="inputaddress" type="radio" name="type" id="mutual funds"><span class="office">REGISTERED OFFICE</span><br>
+            <input class="inputaddress" type="radio" name="type" id="corporate"><span class="office">CORPORATE
+                OFFICE</span>
+            <input class="inputaddress" type="radio" name="type" id="individual"><span class="office">BRANCH
+                OFFICE</span>
+            <input class="inputaddress" type="radio" name="type" id="mutual funds"><span class="office">REGISTERED
+                OFFICE</span><br>
             <table cellspacing="0px">
                 <tbody>
                     <tr>
                         <td>
-            <label class="label" for="residence">COUNTRY OF RESIDENCE<sup>*</sup></label><br>
-            <select class="unchangeable" name="myresidence" id="residence">
-               <option selected disabled>Nepal</option>
-            </select>
-        </td>
-        <td>
-           <label class="label" for="state">STATE<sup>*</sup></label><br>
-           <select class="input" name="myprovince"id="province">
-            <option value="none"selected disabled>Select State</option>
-            <option value="Koshi">Koshi pradesh</option>
-            <option value="Madhesh">Madhesh Pradesh</option>
-            <option value="Bagmati">Bagmati Pradesh</option>
-            <option value="Karnali">Gandaki Pradesh</option>
-            <option value="Mahakali">Lumbini Pradesh</option>
-            <option value="Narayani">Karnali Pradesh</option>
-            <option value="Bheri">Sudur Paschim Pradesh</option></select>
-        </td>    
-        </tr>  
-        <tr><td>
-            <label class="label" for="District">DISTRICT<sup>*</sup></label><br>
-        <select class="input" name="mydisytrict"id="District">
-        <option value="none"selected disabled>Select District</option>
-        <option value="Achham">Achham</option>
-<option value="Arghakhanchi">Arghakhanchi</option>
-<option value="Baglung">Baglung</option>
-<option value="Baitadi">Baitadi</option>
-<option value="Bajhang">Bajhang</option>
-<option value="Bajura">Bajura</option>
-<option value="Banke">Banke</option>
-<option value="Bara">Bara</option>
-<option value="Bardiya">Bardiya</option>
-<option value="Bhaktapur">Bhaktapur</option>
-<option value="Bhojpur">Bhojpur</option>
-<option value="Chitwan">Chitwan</option>
-<option value="Dadeldhura">Dadeldhura</option>
-<option value="Dailekh">Dailekh</option>
-<option value="Dang">Dang</option>
-<option value="Darchula">Darchula</option>
-<option value="Dhading">Dhading</option>
-<option value="Dhankuta">Dhankuta</option>
-<option value="Dhanusha">Dhanusha</option>
-<option value="Dholkha">Dholkha</option>
-<option value="Dolpa">Dolpa</option>
-<option value="Doti">Doti</option>
-<option value="Eastern Rukum">Eastern Rukum</option>
-<option value="Gorkha">Gorkha</option>
-<option value="Gulmi">Gulmi</option>
-<option value="Humla">Humla</option>
-<option value="Ilam">Ilam</option>
-<option value="Jajarkot">Jajarkot</option>
-<option value="Jhapa">Jhapa</option>
-<option value="Jumla">Jumla</option>
-<option value="Kailali">Kailali</option>
-<option value="Kalikot">Kalikot</option>
-<option value="Kanchanpur">Kanchanpur</option>
-<option value="Kapilvastu">Kapilvastu</option>
-<option value="Kaski">Kaski</option>
-<option value="Kathmandu">Kathmandu</option>
-<option value="Kavrepalanchok">Kavrepalanchok</option>
-<option value="Khotang">Khotang</option>
-<option value="Lalitpur">Lalitpur</option>
-<option value="Lamjung">Lamjung</option>
-<option value="Mahottari">Mahottari</option>
-<option value="Makwanpur">Makwanpur</option>
-<option value="Manang">Manang</option>
-<option value="Morang">Morang</option>
-<option value="Mugu">Mugu</option>
-<option value="Mustang">Mustang</option>
-<option value="Myagdi">Myagdi</option>
-<option value="Nawalpur">Nawalpur</option>
-<option value="Nuwakot">Nuwakot</option>
-<option value="Okhaldhunga">Okhaldhunga</option>
-<option value="Palpa">Palpa</option>
-<option value="Panchthar">Panchthar</option>
-<option value="Parbat">Parbat</option>
-<option value="Parsa">Parsa</option>
-<option value="Pyuthan">Pyuthan</option>
-<option value="Ramechhap">Ramechhap</option>
-<option value="Rasuwa">Rasuwa</option>
-<option value="Rautahat">Rautahat</option>
-<option value="Rolpa">Rolpa</option>
-<option value="Rukum">Rukum</option>
-<option value="Rupandehi">Rupandehi</option>
-<option value="Salyan">Salyan</option>
-<option value="Sankhuwasabha">Sankhuwasabha</option>
-<option value="Saptari">Saptari</option>
-<option value="Sarlahi">Sarlahi</option>
-<option value="Sindhuli">Sindhuli</option>
-<option value="Sindhupalchok">Sindhupalchok</option>
-<option value="Siraha">Siraha</option>
-<option value="Solukhumbu">Solukhumbu</option>
-<option value="Sunsari">Sunsari</option>
-<option value="Surkhet">Surkhet</option>
-<option value="Syangja">Syangja</option>
-<option value="Tanahun">Tanahun</option>
-<option value="Taplejung">Taplejung</option>
-<option value="Terhathum">Terhathum</option>
-<option value="Udayapur">Udayapur</option>
-<option value="Western Rukum">Western Rukum</option></select>
-</td>
-<td>
-    <label class="label" for="muncipality">MUNCIPALITY<sup>*</sup></label><br>
-    <input class="input" type="text" name="mymuncipality" id="muncipality" placeholder="Muncipality">
-</td>
-</tr>  
-<tr>
-    <td>
-        <label class="label" for="wardno">WARD NO.<sup>*</sup></label><br>
-        <input class="input" type="text" name="mywardno" id="wardno" placeholder="Ward Number">
-    </td>
-    <td>
-        <label class="label" for="tole">STREET/TOLE<sup>*</sup></label><br>
-        <input class="input" type="text" name="mytole" id="tole" placeholder="Stree/Tole">
-    </td>
-</tr>
+                            <label class="label" for="residence">COUNTRY OF RESIDENCE<sup>*</sup></label><br>
+                            <select class="unchangeable" name="myresidence" id="residence">
+                                <option selected disabled>Nepal</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label class="label" for="state">STATE<sup>*</sup></label><br>
+                            <select class="input" name="myprovince" id="province">
+                                <option value="none" selected disabled>Select State</option>
+                                <option value="Koshi">Koshi pradesh</option>
+                                <option value="Madhesh">Madhesh Pradesh</option>
+                                <option value="Bagmati">Bagmati Pradesh</option>
+                                <option value="Karnali">Gandaki Pradesh</option>
+                                <option value="Mahakali">Lumbini Pradesh</option>
+                                <option value="Narayani">Karnali Pradesh</option>
+                                <option value="Bheri">Sudur Paschim Pradesh</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="label" for="District">DISTRICT<sup>*</sup></label><br>
+                            <select class="input" name="mydisytrict" id="District">
+                                <option value="none" selected disabled>Select District</option>
+                                <option value="Achham">Achham</option>
+                                <option value="Arghakhanchi">Arghakhanchi</option>
+                                <option value="Baglung">Baglung</option>
+                                <option value="Baitadi">Baitadi</option>
+                                <option value="Bajhang">Bajhang</option>
+                                <option value="Bajura">Bajura</option>
+                                <option value="Banke">Banke</option>
+                                <option value="Bara">Bara</option>
+                                <option value="Bardiya">Bardiya</option>
+                                <option value="Bhaktapur">Bhaktapur</option>
+                                <option value="Bhojpur">Bhojpur</option>
+                                <option value="Chitwan">Chitwan</option>
+                                <option value="Dadeldhura">Dadeldhura</option>
+                                <option value="Dailekh">Dailekh</option>
+                                <option value="Dang">Dang</option>
+                                <option value="Darchula">Darchula</option>
+                                <option value="Dhading">Dhading</option>
+                                <option value="Dhankuta">Dhankuta</option>
+                                <option value="Dhanusha">Dhanusha</option>
+                                <option value="Dholkha">Dholkha</option>
+                                <option value="Dolpa">Dolpa</option>
+                                <option value="Doti">Doti</option>
+                                <option value="Eastern Rukum">Eastern Rukum</option>
+                                <option value="Gorkha">Gorkha</option>
+                                <option value="Gulmi">Gulmi</option>
+                                <option value="Humla">Humla</option>
+                                <option value="Ilam">Ilam</option>
+                                <option value="Jajarkot">Jajarkot</option>
+                                <option value="Jhapa">Jhapa</option>
+                                <option value="Jumla">Jumla</option>
+                                <option value="Kailali">Kailali</option>
+                                <option value="Kalikot">Kalikot</option>
+                                <option value="Kanchanpur">Kanchanpur</option>
+                                <option value="Kapilvastu">Kapilvastu</option>
+                                <option value="Kaski">Kaski</option>
+                                <option value="Kathmandu">Kathmandu</option>
+                                <option value="Kavrepalanchok">Kavrepalanchok</option>
+                                <option value="Khotang">Khotang</option>
+                                <option value="Lalitpur">Lalitpur</option>
+                                <option value="Lamjung">Lamjung</option>
+                                <option value="Mahottari">Mahottari</option>
+                                <option value="Makwanpur">Makwanpur</option>
+                                <option value="Manang">Manang</option>
+                                <option value="Morang">Morang</option>
+                                <option value="Mugu">Mugu</option>
+                                <option value="Mustang">Mustang</option>
+                                <option value="Myagdi">Myagdi</option>
+                                <option value="Nawalpur">Nawalpur</option>
+                                <option value="Nuwakot">Nuwakot</option>
+                                <option value="Okhaldhunga">Okhaldhunga</option>
+                                <option value="Palpa">Palpa</option>
+                                <option value="Panchthar">Panchthar</option>
+                                <option value="Parbat">Parbat</option>
+                                <option value="Parsa">Parsa</option>
+                                <option value="Pyuthan">Pyuthan</option>
+                                <option value="Ramechhap">Ramechhap</option>
+                                <option value="Rasuwa">Rasuwa</option>
+                                <option value="Rautahat">Rautahat</option>
+                                <option value="Rolpa">Rolpa</option>
+                                <option value="Rukum">Rukum</option>
+                                <option value="Rupandehi">Rupandehi</option>
+                                <option value="Salyan">Salyan</option>
+                                <option value="Sankhuwasabha">Sankhuwasabha</option>
+                                <option value="Saptari">Saptari</option>
+                                <option value="Sarlahi">Sarlahi</option>
+                                <option value="Sindhuli">Sindhuli</option>
+                                <option value="Sindhupalchok">Sindhupalchok</option>
+                                <option value="Siraha">Siraha</option>
+                                <option value="Solukhumbu">Solukhumbu</option>
+                                <option value="Sunsari">Sunsari</option>
+                                <option value="Surkhet">Surkhet</option>
+                                <option value="Syangja">Syangja</option>
+                                <option value="Tanahun">Tanahun</option>
+                                <option value="Taplejung">Taplejung</option>
+                                <option value="Terhathum">Terhathum</option>
+                                <option value="Udayapur">Udayapur</option>
+                                <option value="Western Rukum">Western Rukum</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label class="label" for="muncipality">MUNCIPALITY<sup>*</sup></label><br>
+                            <input class="input" type="text" name="mymuncipality" id="muncipality"
+                                placeholder="Muncipality">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="label" for="wardno">WARD NO.<sup>*</sup></label><br>
+                            <input class="input" type="text" name="mywardno" id="wardno" placeholder="Ward Number">
+                        </td>
+                        <td>
+                            <label class="label" for="tole">STREET/TOLE<sup>*</sup></label><br>
+                            <input class="input" type="text" name="mytole" id="tole" placeholder="Stree/Tole">
+                        </td>
+                    </tr>
 
-        </tbody>  
-        </table> 
+                </tbody>
+            </table>
         </form>
         <form id="form2">
-            <span class="address1">Address 2</span><a href="Address.html"><span class="delete"><i class="fa-regular fa-trash-can fa-xs"></i><span class="remove"> Remove</span></span></a><br><br>
+            <span class="address1">Address 2</span><a href="Address.html"><span class="delete"><i
+                        class="fa-regular fa-trash-can fa-xs"></i><span class="remove"> Remove</span></span></a><br><br>
             <label class="label" for="type">Address Type<sup>*</sup></label><br>
-            <input class="inputaddress" type="radio" name="type" id="corporate"><span class="office">CORPORATE OFFICE</span>
-            <input class="inputaddress" type="radio" name="type" id="individual"><span class="office">BRANCH OFFICE</span>
-            <input class="inputaddress" type="radio" name="type" id="mutual funds"><span class="office">REGISTERED OFFICE</span><br>
+            <input class="inputaddress" type="radio" name="type" id="corporate"><span class="office">CORPORATE
+                OFFICE</span>
+            <input class="inputaddress" type="radio" name="type" id="individual"><span class="office">BRANCH
+                OFFICE</span>
+            <input class="inputaddress" type="radio" name="type" id="mutual funds"><span class="office">REGISTERED
+                OFFICE</span><br>
             <table cellspacing="0px">
                 <tbody>
                     <tr>
                         <td>
-            <label class="label" for="residence">COUNTRY OF RESIDENCE<sup>*</sup></label><br>
-            <select class="unchangeable" name="myresidence" id="residence">
-               <option selected disabled>Nepal</option>
-            </select>
-        </td>
-        <td>
-           <label class="label" for="state">STATE<sup>*</sup></label><br>
-           <select class="input" name="myprovince"id="province">
-            <option value="none"selected disabled>Select State</option>
-            <option value="Koshi">Koshi pradesh</option>
-            <option value="Madhesh">Madhesh Pradesh</option>
-            <option value="Bagmati">Bagmati Pradesh</option>
-            <option value="Karnali">Gandaki Pradesh</option>
-            <option value="Mahakali">Lumbini Pradesh</option>
-            <option value="Narayani">Karnali Pradesh</option>
-            <option value="Bheri">Sudur Paschim Pradesh</option></select>
-        </td>    
-        </tr>  
-        <tr><td>
-            <label class="label" for="District">DISTRICT<sup>*</sup></label><br>
-        <select class="input" name="mydisytrict"id="District">
-        <option value="none"selected disabled>Select District</option>
-        <option value="Achham">Achham</option>
-<option value="Arghakhanchi">Arghakhanchi</option>
-<option value="Baglung">Baglung</option>
-<option value="Baitadi">Baitadi</option>
-<option value="Bajhang">Bajhang</option>
-<option value="Bajura">Bajura</option>
-<option value="Banke">Banke</option>
-<option value="Bara">Bara</option>
-<option value="Bardiya">Bardiya</option>
-<option value="Bhaktapur">Bhaktapur</option>
-<option value="Bhojpur">Bhojpur</option>
-<option value="Chitwan">Chitwan</option>
-<option value="Dadeldhura">Dadeldhura</option>
-<option value="Dailekh">Dailekh</option>
-<option value="Dang">Dang</option>
-<option value="Darchula">Darchula</option>
-<option value="Dhading">Dhading</option>
-<option value="Dhankuta">Dhankuta</option>
-<option value="Dhanusha">Dhanusha</option>
-<option value="Dholkha">Dholkha</option>
-<option value="Dolpa">Dolpa</option>
-<option value="Doti">Doti</option>
-<option value="Eastern Rukum">Eastern Rukum</option>
-<option value="Gorkha">Gorkha</option>
-<option value="Gulmi">Gulmi</option>
-<option value="Humla">Humla</option>
-<option value="Ilam">Ilam</option>
-<option value="Jajarkot">Jajarkot</option>
-<option value="Jhapa">Jhapa</option>
-<option value="Jumla">Jumla</option>
-<option value="Kailali">Kailali</option>
-<option value="Kalikot">Kalikot</option>
-<option value="Kanchanpur">Kanchanpur</option>
-<option value="Kapilvastu">Kapilvastu</option>
-<option value="Kaski">Kaski</option>
-<option value="Kathmandu">Kathmandu</option>
-<option value="Kavrepalanchok">Kavrepalanchok</option>
-<option value="Khotang">Khotang</option>
-<option value="Lalitpur">Lalitpur</option>
-<option value="Lamjung">Lamjung</option>
-<option value="Mahottari">Mahottari</option>
-<option value="Makwanpur">Makwanpur</option>
-<option value="Manang">Manang</option>
-<option value="Morang">Morang</option>
-<option value="Mugu">Mugu</option>
-<option value="Mustang">Mustang</option>
-<option value="Myagdi">Myagdi</option>
-<option value="Nawalpur">Nawalpur</option>
-<option value="Nuwakot">Nuwakot</option>
-<option value="Okhaldhunga">Okhaldhunga</option>
-<option value="Palpa">Palpa</option>
-<option value="Panchthar">Panchthar</option>
-<option value="Parbat">Parbat</option>
-<option value="Parsa">Parsa</option>
-<option value="Pyuthan">Pyuthan</option>
-<option value="Ramechhap">Ramechhap</option>
-<option value="Rasuwa">Rasuwa</option>
-<option value="Rautahat">Rautahat</option>
-<option value="Rolpa">Rolpa</option>
-<option value="Rukum">Rukum</option>
-<option value="Rupandehi">Rupandehi</option>
-<option value="Salyan">Salyan</option>
-<option value="Sankhuwasabha">Sankhuwasabha</option>
-<option value="Saptari">Saptari</option>
-<option value="Sarlahi">Sarlahi</option>
-<option value="Sindhuli">Sindhuli</option>
-<option value="Sindhupalchok">Sindhupalchok</option>
-<option value="Siraha">Siraha</option>
-<option value="Solukhumbu">Solukhumbu</option>
-<option value="Sunsari">Sunsari</option>
-<option value="Surkhet">Surkhet</option>
-<option value="Syangja">Syangja</option>
-<option value="Tanahun">Tanahun</option>
-<option value="Taplejung">Taplejung</option>
-<option value="Terhathum">Terhathum</option>
-<option value="Udayapur">Udayapur</option>
-<option value="Western Rukum">Western Rukum</option></select>
-</td>
-<td>
-    <label class="label" for="muncipality">MUNCIPALITY<sup>*</sup></label><br>
-    <input class="input" type="text" name="mymuncipality" id="muncipality" placeholder="Muncipality">
-</td>
-</tr>  
-<tr>
-    <td>
-        <label class="label" for="wardno">WARD NO.<sup>*</sup></label><br>
-        <input class="input" type="text" name="mywardno" id="wardno" placeholder="Ward Number">
-    </td>
-    <td>
-        <label class="label" for="tole">STREET/TOLE<sup>*</sup></label><br>
-        <input class="input" type="text" name="mytole" id="tole" placeholder="Stree/Tole">
-    </td>
-</tr>
+                            <label class="label" for="residence">COUNTRY OF RESIDENCE<sup>*</sup></label><br>
+                            <select class="unchangeable" name="myresidence" id="residence">
+                                <option selected disabled>Nepal</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label class="label" for="state">STATE<sup>*</sup></label><br>
+                            <select class="input" name="myprovince" id="province">
+                                <option value="none" selected disabled>Select State</option>
+                                <option value="Koshi">Koshi pradesh</option>
+                                <option value="Madhesh">Madhesh Pradesh</option>
+                                <option value="Bagmati">Bagmati Pradesh</option>
+                                <option value="Karnali">Gandaki Pradesh</option>
+                                <option value="Mahakali">Lumbini Pradesh</option>
+                                <option value="Narayani">Karnali Pradesh</option>
+                                <option value="Bheri">Sudur Paschim Pradesh</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="label" for="District">DISTRICT<sup>*</sup></label><br>
+                            <select class="input" name="mydisytrict" id="District">
+                                <option value="none" selected disabled>Select District</option>
+                                <option value="Achham">Achham</option>
+                                <option value="Arghakhanchi">Arghakhanchi</option>
+                                <option value="Baglung">Baglung</option>
+                                <option value="Baitadi">Baitadi</option>
+                                <option value="Bajhang">Bajhang</option>
+                                <option value="Bajura">Bajura</option>
+                                <option value="Banke">Banke</option>
+                                <option value="Bara">Bara</option>
+                                <option value="Bardiya">Bardiya</option>
+                                <option value="Bhaktapur">Bhaktapur</option>
+                                <option value="Bhojpur">Bhojpur</option>
+                                <option value="Chitwan">Chitwan</option>
+                                <option value="Dadeldhura">Dadeldhura</option>
+                                <option value="Dailekh">Dailekh</option>
+                                <option value="Dang">Dang</option>
+                                <option value="Darchula">Darchula</option>
+                                <option value="Dhading">Dhading</option>
+                                <option value="Dhankuta">Dhankuta</option>
+                                <option value="Dhanusha">Dhanusha</option>
+                                <option value="Dholkha">Dholkha</option>
+                                <option value="Dolpa">Dolpa</option>
+                                <option value="Doti">Doti</option>
+                                <option value="Eastern Rukum">Eastern Rukum</option>
+                                <option value="Gorkha">Gorkha</option>
+                                <option value="Gulmi">Gulmi</option>
+                                <option value="Humla">Humla</option>
+                                <option value="Ilam">Ilam</option>
+                                <option value="Jajarkot">Jajarkot</option>
+                                <option value="Jhapa">Jhapa</option>
+                                <option value="Jumla">Jumla</option>
+                                <option value="Kailali">Kailali</option>
+                                <option value="Kalikot">Kalikot</option>
+                                <option value="Kanchanpur">Kanchanpur</option>
+                                <option value="Kapilvastu">Kapilvastu</option>
+                                <option value="Kaski">Kaski</option>
+                                <option value="Kathmandu">Kathmandu</option>
+                                <option value="Kavrepalanchok">Kavrepalanchok</option>
+                                <option value="Khotang">Khotang</option>
+                                <option value="Lalitpur">Lalitpur</option>
+                                <option value="Lamjung">Lamjung</option>
+                                <option value="Mahottari">Mahottari</option>
+                                <option value="Makwanpur">Makwanpur</option>
+                                <option value="Manang">Manang</option>
+                                <option value="Morang">Morang</option>
+                                <option value="Mugu">Mugu</option>
+                                <option value="Mustang">Mustang</option>
+                                <option value="Myagdi">Myagdi</option>
+                                <option value="Nawalpur">Nawalpur</option>
+                                <option value="Nuwakot">Nuwakot</option>
+                                <option value="Okhaldhunga">Okhaldhunga</option>
+                                <option value="Palpa">Palpa</option>
+                                <option value="Panchthar">Panchthar</option>
+                                <option value="Parbat">Parbat</option>
+                                <option value="Parsa">Parsa</option>
+                                <option value="Pyuthan">Pyuthan</option>
+                                <option value="Ramechhap">Ramechhap</option>
+                                <option value="Rasuwa">Rasuwa</option>
+                                <option value="Rautahat">Rautahat</option>
+                                <option value="Rolpa">Rolpa</option>
+                                <option value="Rukum">Rukum</option>
+                                <option value="Rupandehi">Rupandehi</option>
+                                <option value="Salyan">Salyan</option>
+                                <option value="Sankhuwasabha">Sankhuwasabha</option>
+                                <option value="Saptari">Saptari</option>
+                                <option value="Sarlahi">Sarlahi</option>
+                                <option value="Sindhuli">Sindhuli</option>
+                                <option value="Sindhupalchok">Sindhupalchok</option>
+                                <option value="Siraha">Siraha</option>
+                                <option value="Solukhumbu">Solukhumbu</option>
+                                <option value="Sunsari">Sunsari</option>
+                                <option value="Surkhet">Surkhet</option>
+                                <option value="Syangja">Syangja</option>
+                                <option value="Tanahun">Tanahun</option>
+                                <option value="Taplejung">Taplejung</option>
+                                <option value="Terhathum">Terhathum</option>
+                                <option value="Udayapur">Udayapur</option>
+                                <option value="Western Rukum">Western Rukum</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label class="label" for="muncipality">MUNCIPALITY<sup>*</sup></label><br>
+                            <input class="input" type="text" name="mymuncipality" id="muncipality"
+                                placeholder="Muncipality">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="label" for="wardno">WARD NO.<sup>*</sup></label><br>
+                            <input class="input" type="text" name="mywardno" id="wardno" placeholder="Ward Number">
+                        </td>
+                        <td>
+                            <label class="label" for="tole">STREET/TOLE<sup>*</sup></label><br>
+                            <input class="input" type="text" name="mytole" id="tole" placeholder="Stree/Tole">
+                        </td>
+                    </tr>
 
-        </tbody>  
-        </table> 
+                </tbody>
+            </table>
         </form>
         <form id="form2">
-            <span class="address1">Address 3</span><a href="addnewaddress2.html"><span class="delete"><i class="fa-regular fa-trash-can fa-xs"></i><span class="remove"> Remove</span></span></a><br><br>
+            <span class="address1">Address 3</span><a href="addnewaddress2.html"><span class="delete"><i
+                        class="fa-regular fa-trash-can fa-xs"></i><span class="remove"> Remove</span></span></a><br><br>
             <label class="label" for="type">Address Type<sup>*</sup></label><br>
-            <input class="inputaddress" type="radio" name="type" id="corporate"><span class="office">CORPORATE OFFICE</span>
-            <input class="inputaddress" type="radio" name="type" id="individual"><span class="office">BRANCH OFFICE</span>
-            <input class="inputaddress" type="radio" name="type" id="mutual funds"><span class="office">REGISTERED OFFICE</span><br>
+            <input class="inputaddress" type="radio" name="type" id="corporate"><span class="office">CORPORATE
+                OFFICE</span>
+            <input class="inputaddress" type="radio" name="type" id="individual"><span class="office">BRANCH
+                OFFICE</span>
+            <input class="inputaddress" type="radio" name="type" id="mutual funds"><span class="office">REGISTERED
+                OFFICE</span><br>
             <table cellspacing="0px">
                 <tbody>
                     <tr>
                         <td>
-            <label class="label" for="residence">COUNTRY OF RESIDENCE<sup>*</sup></label><br>
-            <select class="unchangeable" name="myresidence" id="residence">
-               <option selected disabled>Nepal</option>
-            </select>
-        </td>
-        <td>
-           <label class="label" for="state">STATE<sup>*</sup></label><br>
-           <select class="input" name="myprovince"id="province">
-            <option value="none"selected disabled>Select State</option>
-            <option value="Koshi">Koshi pradesh</option>
-            <option value="Madhesh">Madhesh Pradesh</option>
-            <option value="Bagmati">Bagmati Pradesh</option>
-            <option value="Karnali">Gandaki Pradesh</option>
-            <option value="Mahakali">Lumbini Pradesh</option>
-            <option value="Narayani">Karnali Pradesh</option>
-            <option value="Bheri">Sudur Paschim Pradesh</option></select>
-        </td>    
-        </tr>  
-        <tr><td>
-            <label class="label" for="District">DISTRICT<sup>*</sup></label><br>
-        <select class="input" name="mydisytrict"id="District">
-        <option value="none"selected disabled>Select District</option>
-        <option value="Achham">Achham</option>
-<option value="Arghakhanchi">Arghakhanchi</option>
-<option value="Baglung">Baglung</option>
-<option value="Baitadi">Baitadi</option>
-<option value="Bajhang">Bajhang</option>
-<option value="Bajura">Bajura</option>
-<option value="Banke">Banke</option>
-<option value="Bara">Bara</option>
-<option value="Bardiya">Bardiya</option>
-<option value="Bhaktapur">Bhaktapur</option>
-<option value="Bhojpur">Bhojpur</option>
-<option value="Chitwan">Chitwan</option>
-<option value="Dadeldhura">Dadeldhura</option>
-<option value="Dailekh">Dailekh</option>
-<option value="Dang">Dang</option>
-<option value="Darchula">Darchula</option>
-<option value="Dhading">Dhading</option>
-<option value="Dhankuta">Dhankuta</option>
-<option value="Dhanusha">Dhanusha</option>
-<option value="Dholkha">Dholkha</option>
-<option value="Dolpa">Dolpa</option>
-<option value="Doti">Doti</option>
-<option value="Eastern Rukum">Eastern Rukum</option>
-<option value="Gorkha">Gorkha</option>
-<option value="Gulmi">Gulmi</option>
-<option value="Humla">Humla</option>
-<option value="Ilam">Ilam</option>
-<option value="Jajarkot">Jajarkot</option>
-<option value="Jhapa">Jhapa</option>
-<option value="Jumla">Jumla</option>
-<option value="Kailali">Kailali</option>
-<option value="Kalikot">Kalikot</option>
-<option value="Kanchanpur">Kanchanpur</option>
-<option value="Kapilvastu">Kapilvastu</option>
-<option value="Kaski">Kaski</option>
-<option value="Kathmandu">Kathmandu</option>
-<option value="Kavrepalanchok">Kavrepalanchok</option>
-<option value="Khotang">Khotang</option>
-<option value="Lalitpur">Lalitpur</option>
-<option value="Lamjung">Lamjung</option>
-<option value="Mahottari">Mahottari</option>
-<option value="Makwanpur">Makwanpur</option>
-<option value="Manang">Manang</option>
-<option value="Morang">Morang</option>
-<option value="Mugu">Mugu</option>
-<option value="Mustang">Mustang</option>
-<option value="Myagdi">Myagdi</option>
-<option value="Nawalpur">Nawalpur</option>
-<option value="Nuwakot">Nuwakot</option>
-<option value="Okhaldhunga">Okhaldhunga</option>
-<option value="Palpa">Palpa</option>
-<option value="Panchthar">Panchthar</option>
-<option value="Parbat">Parbat</option>
-<option value="Parsa">Parsa</option>
-<option value="Pyuthan">Pyuthan</option>
-<option value="Ramechhap">Ramechhap</option>
-<option value="Rasuwa">Rasuwa</option>
-<option value="Rautahat">Rautahat</option>
-<option value="Rolpa">Rolpa</option>
-<option value="Rukum">Rukum</option>
-<option value="Rupandehi">Rupandehi</option>
-<option value="Salyan">Salyan</option>
-<option value="Sankhuwasabha">Sankhuwasabha</option>
-<option value="Saptari">Saptari</option>
-<option value="Sarlahi">Sarlahi</option>
-<option value="Sindhuli">Sindhuli</option>
-<option value="Sindhupalchok">Sindhupalchok</option>
-<option value="Siraha">Siraha</option>
-<option value="Solukhumbu">Solukhumbu</option>
-<option value="Sunsari">Sunsari</option>
-<option value="Surkhet">Surkhet</option>
-<option value="Syangja">Syangja</option>
-<option value="Tanahun">Tanahun</option>
-<option value="Taplejung">Taplejung</option>
-<option value="Terhathum">Terhathum</option>
-<option value="Udayapur">Udayapur</option>
-<option value="Western Rukum">Western Rukum</option></select>
-</td>
-<td>
-    <label class="label" for="muncipality">MUNCIPALITY<sup>*</sup></label><br>
-    <input class="input" type="text" name="mymuncipality" id="muncipality" placeholder="Muncipality">
-</td>
-</tr>  
-<tr>
-    <td>
-        <label class="label" for="wardno">WARD NO.<sup>*</sup></label><br>
-        <input class="input" type="text" name="mywardno" id="wardno" placeholder="Ward Number">
-    </td>
-    <td>
-        <label class="label" for="tole">STREET/TOLE<sup>*</sup></label><br>
-        <input class="input" type="text" name="mytole" id="tole" placeholder="Stree/Tole">
-    </td>
-</tr>
+                            <label class="label" for="residence">COUNTRY OF RESIDENCE<sup>*</sup></label><br>
+                            <select class="unchangeable" name="myresidence" id="residence">
+                                <option selected disabled>Nepal</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label class="label" for="state">STATE<sup>*</sup></label><br>
+                            <select class="input" name="myprovince" id="province">
+                                <option value="none" selected disabled>Select State</option>
+                                <option value="Koshi">Koshi pradesh</option>
+                                <option value="Madhesh">Madhesh Pradesh</option>
+                                <option value="Bagmati">Bagmati Pradesh</option>
+                                <option value="Karnali">Gandaki Pradesh</option>
+                                <option value="Mahakali">Lumbini Pradesh</option>
+                                <option value="Narayani">Karnali Pradesh</option>
+                                <option value="Bheri">Sudur Paschim Pradesh</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="label" for="District">DISTRICT<sup>*</sup></label><br>
+                            <select class="input" name="mydisytrict" id="District">
+                                <option value="none" selected disabled>Select District</option>
+                                <option value="Achham">Achham</option>
+                                <option value="Arghakhanchi">Arghakhanchi</option>
+                                <option value="Baglung">Baglung</option>
+                                <option value="Baitadi">Baitadi</option>
+                                <option value="Bajhang">Bajhang</option>
+                                <option value="Bajura">Bajura</option>
+                                <option value="Banke">Banke</option>
+                                <option value="Bara">Bara</option>
+                                <option value="Bardiya">Bardiya</option>
+                                <option value="Bhaktapur">Bhaktapur</option>
+                                <option value="Bhojpur">Bhojpur</option>
+                                <option value="Chitwan">Chitwan</option>
+                                <option value="Dadeldhura">Dadeldhura</option>
+                                <option value="Dailekh">Dailekh</option>
+                                <option value="Dang">Dang</option>
+                                <option value="Darchula">Darchula</option>
+                                <option value="Dhading">Dhading</option>
+                                <option value="Dhankuta">Dhankuta</option>
+                                <option value="Dhanusha">Dhanusha</option>
+                                <option value="Dholkha">Dholkha</option>
+                                <option value="Dolpa">Dolpa</option>
+                                <option value="Doti">Doti</option>
+                                <option value="Eastern Rukum">Eastern Rukum</option>
+                                <option value="Gorkha">Gorkha</option>
+                                <option value="Gulmi">Gulmi</option>
+                                <option value="Humla">Humla</option>
+                                <option value="Ilam">Ilam</option>
+                                <option value="Jajarkot">Jajarkot</option>
+                                <option value="Jhapa">Jhapa</option>
+                                <option value="Jumla">Jumla</option>
+                                <option value="Kailali">Kailali</option>
+                                <option value="Kalikot">Kalikot</option>
+                                <option value="Kanchanpur">Kanchanpur</option>
+                                <option value="Kapilvastu">Kapilvastu</option>
+                                <option value="Kaski">Kaski</option>
+                                <option value="Kathmandu">Kathmandu</option>
+                                <option value="Kavrepalanchok">Kavrepalanchok</option>
+                                <option value="Khotang">Khotang</option>
+                                <option value="Lalitpur">Lalitpur</option>
+                                <option value="Lamjung">Lamjung</option>
+                                <option value="Mahottari">Mahottari</option>
+                                <option value="Makwanpur">Makwanpur</option>
+                                <option value="Manang">Manang</option>
+                                <option value="Morang">Morang</option>
+                                <option value="Mugu">Mugu</option>
+                                <option value="Mustang">Mustang</option>
+                                <option value="Myagdi">Myagdi</option>
+                                <option value="Nawalpur">Nawalpur</option>
+                                <option value="Nuwakot">Nuwakot</option>
+                                <option value="Okhaldhunga">Okhaldhunga</option>
+                                <option value="Palpa">Palpa</option>
+                                <option value="Panchthar">Panchthar</option>
+                                <option value="Parbat">Parbat</option>
+                                <option value="Parsa">Parsa</option>
+                                <option value="Pyuthan">Pyuthan</option>
+                                <option value="Ramechhap">Ramechhap</option>
+                                <option value="Rasuwa">Rasuwa</option>
+                                <option value="Rautahat">Rautahat</option>
+                                <option value="Rolpa">Rolpa</option>
+                                <option value="Rukum">Rukum</option>
+                                <option value="Rupandehi">Rupandehi</option>
+                                <option value="Salyan">Salyan</option>
+                                <option value="Sankhuwasabha">Sankhuwasabha</option>
+                                <option value="Saptari">Saptari</option>
+                                <option value="Sarlahi">Sarlahi</option>
+                                <option value="Sindhuli">Sindhuli</option>
+                                <option value="Sindhupalchok">Sindhupalchok</option>
+                                <option value="Siraha">Siraha</option>
+                                <option value="Solukhumbu">Solukhumbu</option>
+                                <option value="Sunsari">Sunsari</option>
+                                <option value="Surkhet">Surkhet</option>
+                                <option value="Syangja">Syangja</option>
+                                <option value="Tanahun">Tanahun</option>
+                                <option value="Taplejung">Taplejung</option>
+                                <option value="Terhathum">Terhathum</option>
+                                <option value="Udayapur">Udayapur</option>
+                                <option value="Western Rukum">Western Rukum</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label class="label" for="muncipality">MUNCIPALITY<sup>*</sup></label><br>
+                            <input class="input" type="text" name="mymuncipality" id="muncipality"
+                                placeholder="Muncipality">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="label" for="wardno">WARD NO.<sup>*</sup></label><br>
+                            <input class="input" type="text" name="mywardno" id="wardno" placeholder="Ward Number">
+                        </td>
+                        <td>
+                            <label class="label" for="tole">STREET/TOLE<sup>*</sup></label><br>
+                            <input class="input" type="text" name="mytole" id="tole" placeholder="Stree/Tole">
+                        </td>
+                    </tr>
 
-<tr>
-    <td align="center" colspan="2" class="new"><a href="nonewaddress.html"><span class="plus">&#x2B;</span><span class="add">Add New Address</span></a></td>
-</tr>
-<tr>
-    <td><a class="backbutton" href="index.html">Back</a><br></td>
-    <td align="right"><a class="nextbutton" href="Bank.html">Next</a><br></td>
-</tr>
-        </tbody>  
-        </table> 
+                    <tr>
+                        <td align="center" colspan="2" class="new"><a href="nonewaddress.html"><span
+                                    class="plus">&#x2B;</span><span class="add">Add New Address</span></a></td>
+                    </tr>
+                    <tr>
+                        <td><a class="backbutton" href="index.html">Back</a><br></td>
+                        <td align="right"><a class="nextbutton" href="Bank.html">Next</a><br></td>
+                    </tr>
+                </tbody>
+            </table>
         </form>
-        </div>
-        <div id="button">
-            <a class="cancel" href="cancel.html">Cancel application</a>      
-            <a class="submit" href="error.html">Submit application</a>      
-          </div>
+    </div>
+    <div id="button">
+        <a class="cancel" href="cancelapplication.html">Cancel application</a>
+        <a class="submit" href="error.html">Submit application</a>
+    </div>
 </body>
+
 </html>
